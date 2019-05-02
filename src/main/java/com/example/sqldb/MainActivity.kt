@@ -13,6 +13,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
+ // this code assigns the button and text IDs created in 
     lateinit var myAddbtn: Button
     lateinit var myUpdatebtn: Button
     lateinit var myDeletebtn: Button
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var mySalary: EditText
 
     lateinit var myDb: DatabaseHelper
-
 
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     override fun onCreate(savedInstanceState: Bundle?) {
