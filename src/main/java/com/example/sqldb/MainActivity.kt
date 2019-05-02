@@ -13,7 +13,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
- // initializing the buttons and referencing them after  
+ // initializing the buttons and referencing them after //
     lateinit var myAddbtn: Button
     lateinit var myUpdatebtn: Button
     lateinit var myDeletebtn: Button
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var myDb: DatabaseHelper
 
- //assigns the ids to the button
+ //assigns the ids to the button//
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,9 +54,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-// this allows the buttons to be assigned to methods in order for the specific buttons to function.
+// this allows the buttons to be assigned to methods in order for the specific buttons to function.//
  
- // this method allows you to add the data in the table
+ // this method allows you to add the data in the table//
     fun addData() {
 
         myAddbtn.setOnClickListener(View.OnClickListener {
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             val salary = mySalary.text.toString().trim()
 
 
-            if (TextUtils.isEmpty(name)) {   //TextUtils allows for the strings to fit inside the given width. If the data is not entered, it will show an error
+            if (TextUtils.isEmpty(name)) {   //TextUtils allows for the strings to fit inside the given width. If the data is not entered, it will show an error//
                 myName.error = "Enter name"
                 return@OnClickListener
             }
@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                 mySalary.error = "Enter salary"
                 return@OnClickListener
             }
-           // this will return if all the data is entered to say it has been added otherwise it will say its not inserted
+           // this will return if all the data is entered to say it has been added otherwise it will say its not inserted//
             val isInserted = myDb.insertData(name, profession, salary)
 
             if (isInserted == true) {
@@ -93,18 +93,18 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-// this allows you to see the table full of users and their data entered, if there is no data in the table it will return an error
+// this allows you to see the table full of users and their data entered, if there is no data in the table it will return an error//
     fun viewAllData() {
 
         myVAbtn.setOnClickListener(View.OnClickListener {
             val res = myDb.getAllData()
 
-            if (res.getCount() == 0) {//sees if their is any users stored on the table
-                showMessage("Error ", "Nothing found") //error if the table has no users
+            if (res.getCount() == 0) {//sees if their is any users stored on the table//
+                showMessage("Error ", "Nothing found") //error if the table has no users//
                 return@OnClickListener
 
             } else {
-                val buffer = StringBuffer() //This string represents fixed-length, immutable character sequences 
+                val buffer = StringBuffer() //This string represents fixed-length, immutable character sequences //
                 while (res.moveToNext()) {
                     buffer.append("Id:" + res.getString(0) + "\n")
                     buffer.append("Name: " + res.getString(1) + "\n\n")
@@ -113,13 +113,13 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-                showMessage("Data", buffer.toString()) // this shows the message at the top of the table
+                showMessage("Data", buffer.toString()) // this shows the message at the top of the table//
             }
         })
 
 
     }
-// this deletes the content in the table using the id.
+// this deletes the content in the table using the id.//
     fun deleteData(){
         myDeletebtn.setOnClickListener(View.OnClickListener {
             val id= myid.getText().toString().trim()
@@ -137,7 +137,7 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
-// this updates the table after adding the user.
+// this updates the table after adding the user.//
     fun updateData() {
 
         myUpdatebtn.setOnClickListener(View.OnClickListener {
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
             val profession = myProfession.text.toString().trim()
             val salary = mySalary.text.toString().trim()
 
-            // shows the error in a given width
+            // shows the error in a given width//
          if (TextUtils.isEmpty(id)) {
                 myid.error = "Enter id"
                 return@OnClickListener
@@ -179,7 +179,7 @@ class MainActivity : AppCompatActivity() {
 
 //
     private fun showMessage(title: String, message: String?) {
-//this alert shows up when the user has not entered their data.
+//this alert shows up when the user has not entered their data.//
         val builder = AlertDialog.Builder(this)
         builder.create()
         builder.setCancelable(true)
