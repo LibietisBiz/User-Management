@@ -19,6 +19,13 @@ A: Better Performance: Small edits only overwrite the parts of the file that cha
 
 And mainly.. Performance problems can often be resolved, even late in the development cycle, using CREATE INDEX, avoiding costly redesign, rewrite, and retest efforts.
 
+BUILT WITH
+----------
+Kotlin -  Kotlin is designed to interoperate fully with Java, its standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
+
+Android Studio - Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.
+
+
  
  
  
