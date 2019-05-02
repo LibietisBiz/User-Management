@@ -41,6 +41,7 @@ Delete button w/ code
  Table of added users w/code
  
  - This is the table where the user data is stored after adding and updating the data
+ 
  ![TABLE](https://github.com/LibietisBiz/User-Management/blob/master/table.png)
  ![TABLECODE](https://github.com/LibietisBiz/User-Management/blob/master/tablecode.png)
 
