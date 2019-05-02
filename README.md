@@ -37,5 +37,11 @@ Delete button w/ code
 ![DELETE BUTTON](https://github.com/LibietisBiz/User-Management/blob/master/deletebtn.png)
 ![TOAST](https://github.com/LibietisBiz/User-Management/blob/master/nodelete.png)
  
+ 
+ Table of added users w/code
+ 
+ - This is the table where the user data is stored after adding and updating the data
+ ![TABLE](https://github.com/LibietisBiz/User-Management/blob/master/table.png)
+ ![TABLECODE](https://github.com/LibietisBiz/User-Management/blob/master/tablecode.png)
 
  
