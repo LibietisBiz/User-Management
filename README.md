@@ -30,7 +30,7 @@ SNIPPETS
 
 Delete button w/ code
           
-![DELETE]()
+![DELETE](https://github.com/LibietisBiz/User-Management/blob/master/delete.png)
  
 
  
