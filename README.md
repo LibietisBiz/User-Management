@@ -31,7 +31,7 @@ SNIPPETS
 Delete button w/ code
 
 - This deletes users ID,Name,Profession and Salary from the table.
-- A Toast is used if not entered correctly
+- A Toast is used if users data is not entered correctly or if no user data is stored in the table
           
 ![DELETE](https://github.com/LibietisBiz/User-Management/blob/master/delete.png)
 ![DELETE BUTTON](https://github.com/LibietisBiz/User-Management/blob/master/deletebtn.png)
